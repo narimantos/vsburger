@@ -1,0 +1,81 @@
+{
+    "name": "vspizza",
+    "displayName": "VSPizza",
+    "description": "Order Pizza from within VS Code.",
+    "icon": "images/icon.png",
+    "version": "0.0.1",
+    "publisher": "jordancraig",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "license": "MIT",
+    "keywords": [
+      "order pizza vspizza"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jordancraig/vspizza.git"
+    },
+    "homepage": "https://github.com/jordancraig/vspizza",
+    "bugs": {
+      "url": "https://github.com/jordancraig/vspizza/issues"
+    },
+    "activationEvents": [
+        "onCommand:extension.orderPizza"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.orderPizza",
+                "title": "Order Pizza"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "VSPizza Configuration",
+            "properties": {
+              "vspizza.customPizza": {
+                "type": "string",
+                "description": "Specify the URL to your favourite pizza.",
+                "default": "https://www.pizzahut.co.uk/restaurants/food/pizza/meat-feast/"
+              }
+            }
+        },
+        "keybindings": [
+            {
+              "command": "extension.orderPizza",
+              "key": "ctrl+f2",
+              "mac": "cmd+f2"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+              {
+                "command": "extension.orderPizza",
+                "group": "navigation@1"
+              }
+            ],
+            "explorer/context": [
+                {
+                  "command": "extension.orderPizza",
+                  "group": "navigation@1"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.6.1",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
