@@ -1,10 +1,10 @@
-# VS Pizza
+# VS Burger
 
-Order pizza directly from VS Code!
+Order Burger directly from VS Code!
 
 ## Features
 
- - Customizable URL for your favourite pizza
+ - Customizable URL for your favourite Burger
  - Key shortcut for fast ordering.
  - Editor/Explorer context menu options.
 
@@ -16,7 +16,7 @@ Order pizza directly from VS Code!
 
 This extension contributes the following settings:
 
-* `vsPizza.customPizza`: Add the URL for your favourite pizza here!
+* `vsBurger.customBurger`: Add the URL for your favourite Burger here!
 
 ## Known Issues
 
@@ -26,7 +26,7 @@ This extension contributes the following settings:
 
 ### 1.0.0
 
-Initial release of VS Pizza
+Initial release of VS Burger
 
 -----------------------------------------------------------------------------------------------------------
 
