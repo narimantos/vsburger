@@ -2,13 +2,13 @@ const vscode = require('vscode');
 
 function activate(context) {
 
-    console.log('vspizza has been activated. Use `Order Pizza` from the command pallette to launch. ');
+    console.log('vsburger has been activated. Use `Order Burger` from the command pallette to launch. ');
 
-    let disposable = vscode.commands.registerCommand('extension.orderPizza', function () {
-        let config = vscode.workspace.getConfiguration('vspizza');
-        let customPizza = config.get("customPizza");
+    let disposable = vscode.commands.registerCommand('extension.orderBurger', function () {
+        let config = vscode.workspace.getConfiguration('vsburger');
+        let customBurger = config.get("customBurger");
 
-        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(customPizza));
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(customBurger));
     });
 
     context.subscriptions.push(disposable);

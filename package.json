@@ -1,10 +1,10 @@
 {
-    "name": "vspizza",
-    "displayName": "VSPizza",
-    "description": "Order Pizza from within VS Code.",
+    "name": "vsburger",
+    "displayName": "VSBurger",
+    "description": "Order Burgers from within VS Code.",
     "icon": "images/icon.png",
     "version": "0.0.1",
-    "publisher": "jordancraig",
+    "publisher": "narimane",
     "engines": {
         "vscode": "^1.18.0"
     },
@@ -13,56 +13,56 @@
     ],
     "license": "MIT",
     "keywords": [
-      "order pizza vspizza"
+        "order burger vsburger"
     ],
     "repository": {
-      "type": "git",
-      "url": "https://github.com/jordancraig/vspizza.git"
+        "type": "git",
+        "url": "https://github.com/narimantos/vsburger.git"
     },
-    "homepage": "https://github.com/jordancraig/vspizza",
+    "homepage": "https://github.com/narimantos/vsburger",
     "bugs": {
-      "url": "https://github.com/jordancraig/vspizza/issues"
+        "url": "https://github.com/narimantos/vsburger/issues"
     },
     "activationEvents": [
-        "onCommand:extension.orderPizza"
+        "onCommand:extension.orderBurger"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.orderPizza",
-                "title": "Order Pizza"
+                "command": "extension.orderBurger",
+                "title": "Order Burger"
             }
         ],
         "configuration": {
             "type": "object",
-            "title": "VSPizza Configuration",
+            "title": "VSBurger Configuration",
             "properties": {
-              "vspizza.customPizza": {
-                "type": "string",
-                "description": "Specify the URL to your favourite pizza.",
-                "default": "https://www.pizzahut.co.uk/restaurants/food/pizza/meat-feast/"
-              }
+                "vsburger.customBurger": {
+                    "type": "string",
+                    "description": "Specify the URL to your favourite burger.",
+                    "default": "https://mcdelivery.mcdonalds.nl/"
+                }
             }
         },
         "keybindings": [
             {
-              "command": "extension.orderPizza",
-              "key": "ctrl+f2",
-              "mac": "cmd+f2"
+                "command": "extension.orderBurger",
+                "key": "ctrl+f2",
+                "mac": "cmd+f2"
             }
         ],
         "menus": {
             "editor/context": [
-              {
-                "command": "extension.orderPizza",
-                "group": "navigation@1"
-              }
+                {
+                    "command": "extension.orderBurger",
+                    "group": "navigation@1"
+                }
             ],
             "explorer/context": [
                 {
-                  "command": "extension.orderPizza",
-                  "group": "navigation@1"
+                    "command": "extension.orderBurger",
+                    "group": "navigation@1"
                 }
             ]
         }
