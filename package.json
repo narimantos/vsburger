@@ -3,7 +3,7 @@
     "displayName": "VSBurger",
     "description": "Order Burgers from within VS Code.",
     "icon": "images/icon.png",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "narimane",
     "engines": {
         "vscode": "^1.18.0"
