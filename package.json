@@ -72,7 +72,7 @@
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
+        "typescript": "^5.1.6",
         "vscode": "^1.1.6",
         "eslint": "^4.6.1",
         "@types/node": "^7.0.43",
